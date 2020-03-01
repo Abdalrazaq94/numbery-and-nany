@@ -7,20 +7,23 @@ function saveHandler() {
         alert("Please Fill the  Required Field");
         return false;
     }
-    //decide the type
+    //decide if duplicate
     if (entries.numbery.filter(function (e) { return e === inputValue; }).length > 0) {
         alert("Duplicate values, input won't be added !");
         return false
     }
+    //decode if duplicate
     if (entries.nany.filter(function (e) { return e === inputValue; }).length > 0) {
         alert("Duplicate values, input won't be added !");
         return false
     }
+    //parse the number and check if number or not use isnan and number functions
     var parsedIn = Number(inputValue);
     if (isNaN(parsedIn))
         entries.nany.push(inputValue);
     else
         entries.numbery.push(inputValue);
+    //render the results to the UI in anycase
     RenderResults();
 }
 function RenderResults() {
@@ -46,7 +49,6 @@ function RenderResults() {
         newLi.innerText = thing;
         ulElN.appendChild(newLi);
     }
-
     nanList.appendChild(ulElN);
 
     //empty the input string 
