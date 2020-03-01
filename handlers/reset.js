@@ -13,4 +13,7 @@ function resetHandler() {
     nanList.appendChild(ulElN);
     //empty the input string 
     document.getElementById('txtInput').value = "";
+    //emptry the state object
+    entries.numbery = [];
+    entries.nany = [];
 }
