@@ -19,7 +19,6 @@ function saveHandler() {
     if (isNaN(parsedIn)) { entries.nany.push(inputValue); }
     else { entries.numbery.push(inputValue); }
     RenderResults();
-
 }
 function RenderResults() {
     //Number list
