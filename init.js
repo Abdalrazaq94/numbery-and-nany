@@ -4,8 +4,5 @@ window.onload = () => {
 
 
     // log initial state
-    const copyOfState = JSON.parse(JSON.stringify(numbers));
-    log.push({
-        initialNumbers: copyOfState
-    });
+
 }
