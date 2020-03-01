@@ -1,7 +1,8 @@
 function saveHandler() {
     debugger;
     //get the input by user
-    const inputValue = document.getElementById('txtInput').value;
+    const inputValueNoTrim = document.getElementById('txtInput').value;
+    const inputValue = inputValueNoTrim.trim();
     if (inputValue === " " || inputValue === null || inputValue === '') {
         alert("Please Fill the  Required Field");
         return false;
@@ -15,9 +16,11 @@ function saveHandler() {
         alert("Duplicate values, input won't be added !");
         return false
     }
-    var parsedIn = parseInt(inputValue);
-    if (isNaN(parsedIn)) { entries.nany.push(inputValue); }
-    else { entries.numbery.push(inputValue); }
+    var parsedIn = Number(inputValue);
+    if (isNaN(parsedIn))
+        entries.nany.push(inputValue);
+    else
+        entries.numbery.push(inputValue);
     RenderResults();
 }
 function RenderResults() {

@@ -14,25 +14,33 @@
     <script src="./handlers/reset.js"></script>
   </head>
 
-  <body>
+  <body onload='document.mainForm.txtInput.focus()'>
+    <form name="mainForm" action="#"></form>
+    <h3 class="header">Please enter a value ...</h3>
     <section id="user-interface" class="centered">
       <br />
-      <input id="txtInput" type="text" required /><br />
+      <input id="txtInput" type="text" required />
+      <br />
+      <hr />
+      <br />
       <button id="btnSave">Save</button>
       <button id="btnRemove">Remove</button>
       <hr />
-      <div class="list">
+      <div >
         Numbers:
         <div id="Numbery"><ul></ul></div>
+        <hr/>
         NAN :
         <div id="Nany"><ul></ul></div>
       </div>
       <hr />
-      <button id="btnReset">reset</button>
+      <button id="btnReset">Reset</button>
     </section>
+  
 
     <script src="./listeners/removeinput.js"></script>
     <script src="./listeners/saveinput.js"></script>
     <script src="./listeners/reset.js"></script>
+  </form>
   </body>
 </html>
