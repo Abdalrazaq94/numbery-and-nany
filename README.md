@@ -42,7 +42,7 @@ The project is divided into many steps as user-stories is mapped to branches as 
 
 Project is: finished as it is for learning purpose.
 
-![Screen - Shot](./Number and NANy.png)
+![Screen - Shot](https://github.com/Rashaali84/numbery-and-nany/blob/master/Number%20and%20NANy.png)
 
 ## Inspiration
 
