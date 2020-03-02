@@ -11,6 +11,7 @@ Building this site one step at a time
 
 > * data is already created with enteries.js file , log.js is created .
 > * log.js --> creation a log state object to log the program steps.
+  * I some times used alert(), to send a message to the uesr with the current updates instead of using logs .
 
 ## 2. Init
 
