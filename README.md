@@ -1,13 +1,59 @@
-# Numbery & NaNy
+# soc-week-3-project
 
-> Create a website that sorts user-provided strings into two categories, _NaNy_ and _Numbery_.  It should look like a prettier version of this:
+## Table of contents
 
-> ![screenshot](./screenshot.png)
+- [General info](#general-info)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Features](#features)
+- [Status](#status)
+- [Inspiration](#inspiration)
+- [Contact](#contact)
 
-> Further specifications:
-> * If a user inputs the same value twice, you should not save it in your app.  Your lists should never have repeated values
-> * After a user has removed a value from your state, they should be able to add it again.
+## General info
 
-> Be sure to organize your code and structure your development strategy!  You can study the [example projects](https://github.com/HackYourFutureBelgium/state/tree/master/example-projects) from this module's repo for an idea of how to do this.
+The Motivation behind this project is to get more comfortable with java-scripts basics , dealing with different types and using different operators and etc..
 
-> And don't forget to rewrite this README to describe your project :) Check out these articles to learn more about writing a good README: [makeareadme.com](https://www.makeareadme.com/), [bulldogjob](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project), [meakaakka](https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3)
+
+
+## Technologies
+
+- Pure Java-script and HTML .
+
+## Setup
+
+Clone the repository
+Open using Visual studio code ..
+Explore...
+use VS Debugger to trace code.
+
+## Features
+
+The project is divided into many steps as user-stories is mapped to branches as follows :
+ step 1-layout-basic-folders
+
+step 2-save-input-logic
+
+step 3-reset-action-logic
+
+step 4 updates-bugFixes
+
+| _Step Name_ | Branch Name    |
+| ----------- | -------------- |
+| step 1-     | step 1-Layout basic folders         |
+| step 2 -    |  step 2-save input logic     |
+| step 3 -    | step 3-reset action logic |
+| step 4 -    |  step 4-updates-bugfixes     |
+
+## Status
+
+Project is: finished as it is for learning purpose.
+![Screen - Shot](./Number and NANy.png)
+
+## Inspiration
+
+Based on the https://github.com/Rashaali84/numbery-and-nany
+
+## Contact
+
+Created by Rasha Ali https://rashaali84.github.io/ - feel free to contact me over GitHub!
