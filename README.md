@@ -1,4 +1,4 @@
-# soc-week-3-project
+# Numbery-and-Nany
 
 ## Table of contents
 
