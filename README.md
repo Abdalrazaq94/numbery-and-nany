@@ -28,7 +28,7 @@ Explore...
 use VS Debugger to trace code.
 
 ## Features
-
+Create a website that sorts user-provided strings into two categories, NaNy and Numbery. 
 The project is divided into many steps as user-stories is mapped to branches as follows :
 
 | _Step Name_ | Branch Name    |
@@ -37,6 +37,14 @@ The project is divided into many steps as user-stories is mapped to branches as 
 | step 2 -    |  step 2-save input logic     |
 | step 3 -    | step 3-reset action logic |
 | step 4 -    |  step 4-updates-bugfixes     |
+
+
+    Further specifications:
+
+        If a user inputs the same value twice, you should not save it in your app. Your lists should never have repeated values
+        After a user has removed a value from your state, they should be able to add it again.
+
+
 
 ## Status
 
