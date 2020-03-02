@@ -30,13 +30,6 @@ use VS Debugger to trace code.
 ## Features
 
 The project is divided into many steps as user-stories is mapped to branches as follows :
- step 1-layout-basic-folders
-
-step 2-save-input-logic
-
-step 3-reset-action-logic
-
-step 4 updates-bugFixes
 
 | _Step Name_ | Branch Name    |
 | ----------- | -------------- |
@@ -48,6 +41,7 @@ step 4 updates-bugFixes
 ## Status
 
 Project is: finished as it is for learning purpose.
+
 ![Screen - Shot](./Number and NANy.png)
 
 ## Inspiration
