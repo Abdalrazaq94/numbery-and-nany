@@ -1,0 +1,17 @@
+#red{
+   
+    display: flex;
+      justify-content: center;
+      border: solid black 1px;
+      background-color: rgb(196, 245, 245);
+     width: 50%;
+     height: 50%;
+    
+   }
+   section{
+       border: solid black 1px;
+       background-color: rgb(240, 234, 234);
+   }
+   input{
+       background-color: rgb(159, 151, 211);
+   }
