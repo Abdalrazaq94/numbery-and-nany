@@ -1,56 +1,46 @@
-function saveHandler() {
-    debugger;
-    //get the input by user
-    const inputValueNoTrim = document.getElementById('txtInput').value;
-    const inputValue = inputValueNoTrim.trim();
-    if (inputValue === " " || inputValue === null || inputValue === '') {
-        alert("Please Fill the  Required Field");
-        return false;
-    }
-    //decide if duplicate
-    if (entries.numbery.filter(function (e) { return e === inputValue; }).length > 0) {
-        alert("Duplicate values, input won't be added !");
-        return false
-    }
-    //decode if duplicate
-    if (entries.nany.filter(function (e) { return e === inputValue; }).length > 0) {
-        alert("Duplicate values, input won't be added !");
-        return false
-    }
-    //parse the number and check if number or not use isnan and number functions
-    var parsedIn = Number(inputValue);
-    if (isNaN(parsedIn))
-        entries.nany.push(inputValue);
-    else
-        entries.numbery.push(inputValue);
-    //render the results to the UI in anycase
-    RenderResults();
-}
-function RenderResults() {
-    //Number list
-    debugger;
-    const numberlist = document.getElementById('Numbery');
-    //check if ul already exists if not create it 
-    const ulEl = numberlist.children[0];
-    ulEl.innerHTML = '';
-    for (let thing of entries.numbery) {
-        const newLi = document.createElement('li');
-        newLi.innerText = thing;
-        ulEl.appendChild(newLi);
-    }
-    numberlist.appendChild(ulEl);
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Numbery & Nany !</title>
 
-    //NAN list
-    const nanList = document.getElementById('Nany');
-    const ulElN = nanList.children[0];
-    ulElN.innerHTML = '';
-    for (let thing of entries.nany) {
-        const newLi = document.createElement('li');
-        newLi.innerText = thing;
-        ulElN.appendChild(newLi);
-    }
-    nanList.appendChild(ulElN);
+    <link rel="stylesheet" href="style.css" />
+    <script src="./data/entries.js"></script>
+    <script src="./log.js"></script>
+    <script src="./init.js"></script>
 
-    //empty the input string 
-    document.getElementById('txtInput').value = "";
-}
+    <script src="handelers\removeinput.js"></script>
+    <script src="handelers\saveinput.js"></script>
+    <script src="listeners\rest.js"></script>
+  </head>
+
+  <body onload='document.mainForm.txtInput.focus()'>
+    <form name="mainForm" action="#"></form>
+    <div id="red">
+    <section id="user-interface" class="first">
+      <br />
+      <input id="txtInput" type="text" required />
+      <br />
+      <hr />
+      <br />
+      <button id="btnSave">Save</button>
+      <button id="btnRemove">Remove</button>
+      <hr />
+      <div >
+        Numbers:
+        <div id="Numbery"><ul></ul></div>
+        <hr/>
+        NAN :
+        <div id="Nany"><ul></ul></div>
+      </div>
+      <hr />
+      <button id="btnReset">Reset</button>
+    </section>
+</div>
+    <script src="listeners\removeinput.js"></script>
+    <script src="listeners\rest.js"></script>
+    <script src="listeners\saveinput.js"></script>
+  </form>
+  </body>
+</html>
+
